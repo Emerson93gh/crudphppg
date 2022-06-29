@@ -12,5 +12,8 @@
             "email": "emerson-solano@hotmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+      }
 }

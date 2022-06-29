@@ -1,6 +1,7 @@
 <?php include './template/header.php' ?>
 
 <?php
+require('vendor/autoload.php');
 include_once 'model/conexion.php';
 $sentencia = $db->query("SELECT * FROM personas");
 $persona = $sentencia->fetchAll(PDO::FETCH_OBJ);

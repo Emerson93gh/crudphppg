@@ -1,0 +1,16 @@
+{
+    "name": "emers/phppg",
+    "description": "CRUD PHP Postgre",
+    "autoload": {
+        "psr-4": {
+            "Emers\\Phppg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emerson Solano",
+            "email": "emerson-solano@hotmail.com"
+        }
+    ],
+    "require": {}
+}

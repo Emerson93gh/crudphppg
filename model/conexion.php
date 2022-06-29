@@ -17,15 +17,10 @@ $pass = $_ENV['MI_PASS'];
 // $usuario = "USER";
 // $pass = "PASS";
 
-// $conexion_string = "host={$host} port={$puerto} dbname={$nombreDb} user={$usuario} password={$pass}";
-
 try {
-    //$dbcon = pg_connect( $conexion_string );
     $db = new PDO("pgsql:host=$host;port=$puerto;dbname=$nombreDb;user=$usuario;password=$pass");
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "Conectado correctamente";
 } catch (Exception $e) {
     echo "Problema de conecion con la bd: " .$e->getMessage();
 }
-
-?>

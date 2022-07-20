@@ -1,14 +1,17 @@
 <?php
-include 'DevCoder.php';
-use DevCoder\DotEnv;
+// include 'DevCoder.php';
+// use DevCoder\DotEnv;
 
-(new DotEnv(__DIR__ . '/../.env'))->load();
+// (new DotEnv(__DIR__ . '/../.env'))->load();
 
 $host = $_ENV['MI_HOST'];
 $puerto = $_ENV['MI_PUERTO'];
 $nombreDb = $_ENV['MI_BD'];
 $usuario = $_ENV['MI_USUARIO'];
 $pass = $_ENV['MI_PASS'];
+
+// var_dump($host);
+// var_dump($puerto);
 
 // CONEXION LOCAL
 // $host = "HOST";

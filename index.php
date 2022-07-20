@@ -2,7 +2,11 @@
 
 <?php
 require('vendor/autoload.php');
+$dotenv = Dotenv\Dotenv::createImmutable('./');
+$dotenv->load();
+
 include_once 'model/conexion.php';
+
 $sentencia = $db->query("SELECT * FROM personas");
 $persona = $sentencia->fetchAll(PDO::FETCH_OBJ);
 // print_r($persona);

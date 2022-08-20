@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title>CRUD PHP Y MYSQL CON BOOTSTRAP 5</title>
+    <title>CRUD PHP</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,8 +17,21 @@
           <div class="row">
               <div class="col-md">
                   <header class="py-3">
-                      <h3 class="text-center">CRUD PHP, PostgreSQL y Bootstrap 5</h3>
+                    <h3 class="text-center">CRUD PHP, PostgreSQL y Bootstrap 5</h3>
                   </header>
               </div>
           </div>
+      </div>
+      <div class="d-flex justify-content-start">
+        <div class="dropdown me-1">
+            <div class="btn-group">
+                <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
+                <a class="btn btn-dark" href="https://github.com/Emerson93gh/crudphppg" role="button" target="_blank">
+                    <i class="bi bi-github"></i> Código
+                </a>
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/emerson-s-24786247" role="button" target="_blank">
+                    <i class="bi bi-linkedin"></i> Perfil
+                </a>    
+            </div>
+        </div>
       </div>

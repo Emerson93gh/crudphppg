@@ -1,9 +1,10 @@
 <?php include './template/header.php' ?>
 
 <?php
-require('vendor/autoload.php');
-$dotenv = Dotenv\Dotenv::createImmutable('./');
-$dotenv->load();
+// En pc personal hay problemas con el Path no corre el dotenv
+// require('vendor/autoload.php');
+// $dotenv = Dotenv\Dotenv::createImmutable('./');
+//$dotenv->load();
 
 include_once 'model/conexion.php';
 

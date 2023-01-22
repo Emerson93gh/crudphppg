@@ -1,10 +1,13 @@
 <?php include './template/header.php' ?>
 
 <?php
-// En pc personal hay problemas con el Path no corre el dotenv
-// require('vendor/autoload.php');
-// $dotenv = Dotenv\Dotenv::createImmutable('./');
-//$dotenv->load();
+// include_once ('../dirs.php');
+//  require MY_DIR . '/vendor/autoload.php';
+// $dotenv = Dotenv\Dotenv::createImmutable(MY_DIR);
+// $dotenv->load();
+// var_dump($dotenv);
+// echo $_ENV['PRUEBA'];
+//echo $_SERVER['DOCUMENT_ROOT'];
 
 include_once 'model/conexion.php';
 

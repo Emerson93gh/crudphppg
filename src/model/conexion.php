@@ -9,11 +9,11 @@
 // var_dump($puerto);
 
 // CONEXION LOCAL
-$host = "host";
-$puerto = "puerto";
-$nombreDb = "db";
-$usuario = "user";
-$pass = "pass";
+$host = "containers-us-west-107.railway.app";
+$puerto = 5749;
+$nombreDb = "railway";
+$usuario = "postgres";
+$pass = "Ys8omBz2va5wpQyinj3R";
 
 try {
     $db = new PDO("pgsql:host=$host;port=$puerto;dbname=$nombreDb;user=$usuario;password=$pass");

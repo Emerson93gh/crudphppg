@@ -1,24 +1,19 @@
 <?php
-// include 'DevCoder.php';
-// use DevCoder\DotEnv;
-
-// (new DotEnv(__DIR__ . '/../.env'))->load();
-
-$host = $_ENV['MI_HOST'];
-$puerto = $_ENV['MI_PUERTO'];
-$nombreDb = $_ENV['MI_BD'];
-$usuario = $_ENV['MI_USUARIO'];
-$pass = $_ENV['MI_PASS'];
+// $host = $_ENV['MI_HOST'];
+// $puerto = $_ENV['MI_PUERTO'];
+// $nombreDb = $_ENV['MI_BD'];
+// $usuario = $_ENV['MI_USUARIO'];
+// $pass = $_ENV['MI_PASS'];
 
 // var_dump($host);
 // var_dump($puerto);
 
 // CONEXION LOCAL
-// $host = "HOST";
-// $puerto = "PORT";
-// $nombreDb = "BD";
-// $usuario = "USER";
-// $pass = "PASS";
+$host = "host";
+$puerto = "puerto";
+$nombreDb = "db";
+$usuario = "user";
+$pass = "pass";
 
 try {
     $db = new PDO("pgsql:host=$host;port=$puerto;dbname=$nombreDb;user=$usuario;password=$pass");

@@ -4,7 +4,14 @@
         header('Location: index.php?mensaje=error');
         exit();
     }
+
+    require_once __DIR__ . '../../vendor/autoload.php';
+
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+
     include_once 'model/conexion.php';
+    
     $codigo = $_GET['codigo'];
 
     $sentencia = $db->prepare("SELECT * FROM personas WHERE codigo = ?;");

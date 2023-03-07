@@ -1,19 +1,17 @@
 <?php
-// $host = $_ENV['MI_HOST'];
-// $puerto = $_ENV['MI_PUERTO'];
-// $nombreDb = $_ENV['MI_BD'];
-// $usuario = $_ENV['MI_USUARIO'];
-// $pass = $_ENV['MI_PASS'];
-
-// var_dump($host);
-// var_dump($puerto);
+// CONEXION A SERVER
+$host = $_ENV['PGHOST'];
+$puerto = $_ENV['PGPORT'];
+$nombreDb = $_ENV['PGDATABASE'];
+$usuario = $_ENV['PGUSER'];
+$pass = $_ENV['PGPASSWORD'];
 
 // CONEXION LOCAL
-$host = "host";
-$puerto = "puerto";
-$nombreDb = "db";
-$usuario = "user";
-$pass = "pass";
+// $host = "MY_HOST";
+// $puerto = 0123;
+// $nombreDb = "MY_DB";
+// $usuario = "MY_USER";
+// $pass = "MY_PASS";
 
 try {
     $db = new PDO("pgsql:host=$host;port=$puerto;dbname=$nombreDb;user=$usuario;password=$pass");

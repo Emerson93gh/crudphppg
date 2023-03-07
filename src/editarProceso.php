@@ -3,7 +3,14 @@
     if (!isset($_POST['codigo'])){
         header('Location: index.php?mensaje=error');
     }
-    include 'model/conexion.php';
+
+    require_once __DIR__ . '../../vendor/autoload.php';
+
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+
+    include_once 'model/conexion.php';
+
     $codigo = $_POST['codigo'];
     $nombre = $_POST['txtNombre'];
     $edad = $_POST['txtEdad'];

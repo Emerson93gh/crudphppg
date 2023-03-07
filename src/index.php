@@ -1,13 +1,11 @@
 <?php include './template/header.php' ?>
 
 <?php
-// include_once ('../dirs.php');
-//  require MY_DIR . '/vendor/autoload.php';
-// $dotenv = Dotenv\Dotenv::createImmutable(MY_DIR);
-// $dotenv->load();
-// var_dump($dotenv);
-// echo $_ENV['PRUEBA'];
-//echo $_SERVER['DOCUMENT_ROOT'];
+//var_dump(__DIR__);
+require_once __DIR__ . '../../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 include_once 'model/conexion.php';
 

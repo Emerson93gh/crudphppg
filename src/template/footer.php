@@ -1,7 +1,12 @@
     <footer class="container-fluid bg-dark fixed-bottom">
         <div class="row">
-            <div class="col-md text-light text-center py-1">
-                Desarrollado por Emerson Solano
+            <div class="col-md-10 text-light text-center py-1">
+                <!-- Desarrollado por Emerson Solano -->
+                <p class="mb-0">Desarrollado por Emerson Solano, MIT License 2023.</p>
+            </div>
+            <div class="col mx-2 py-2">
+                <a class="text-light mx-1" href="https://www.linkedin.com/in/emerson-s-24786247" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a class="text-light mx-1" href="https://github.com/Emerson93gh" target="_blank"><i class="bi bi-github"></i></a>
             </div>
         </div>
     </footer>

@@ -2,10 +2,10 @@
 
 <?php
 //var_dump(__DIR__);
-require_once __DIR__ . '../../vendor/autoload.php';
+// require_once __DIR__ . '../../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
 
 include_once 'model/conexion.php';
 

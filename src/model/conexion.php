@@ -1,17 +1,17 @@
 <?php
 // CONEXION A SERVER
-$host = $_ENV['PGHOST'];
-$puerto = $_ENV['PGPORT'];
-$nombreDb = $_ENV['PGDATABASE'];
-$usuario = $_ENV['PGUSER'];
-$pass = $_ENV['PGPASSWORD'];
+// $host = $_ENV['PGHOST'];
+// $puerto = $_ENV['PGPORT'];
+// $nombreDb = $_ENV['PGDATABASE'];
+// $usuario = $_ENV['PGUSER'];
+// $pass = $_ENV['PGPASSWORD'];
 
 // CONEXION LOCAL
-// $host = "MY_HOST";
-// $puerto = 0123;
-// $nombreDb = "MY_DB";
-// $usuario = "MY_USER";
-// $pass = "MY_PASS";
+$host = "containers-us-west-107.railway.app";
+$puerto = 5749;
+$nombreDb = "railway";
+$usuario = "postgres";
+$pass = "2CTsvH4Zv58JNDnUz6If";
 
 try {
     $db = new PDO("pgsql:host=$host;port=$puerto;dbname=$nombreDb;user=$usuario;password=$pass");
